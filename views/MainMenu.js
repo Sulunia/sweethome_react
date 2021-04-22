@@ -200,7 +200,8 @@ const MainMenu = (props) => {
       ToastAndroid.show("Conectado", ToastAndroid.SHORT)
 
       //Prepare the device accordingly
-      if (targetDevice.name === "RqBleLight") {
+      //TODO: well, not depending on device name sounds like a great start...
+      if (targetDevice.type === "LAMP") {
         //Support FLC A67 Bluetooth Smart lamp
         //Authenticate
         BleDrv.writeChar([0x72, 0x22, 0x9a, 0xbb, 0xa0], "00005251-0000-1000-8000-00805f9b34fb", "00002506-0000-1000-8000-00805f9b34fb")
