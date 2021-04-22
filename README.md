@@ -1,6 +1,6 @@
 # Sweethome Control Panel
 
-<img src="https://imgur.com/iPfPPGl.png" width="380"></img>
+<img src="https://imgur.com/OXNgxI5.png" width="381"></img>
 <img src="https://imgur.com/mX0lyiC.png" width="382"></img>
 
 ## About
