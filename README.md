@@ -17,17 +17,20 @@ Funciona do Android 7 em diante, inclusive Android 11.
 * AMOLED friendly, dark themed by default.
 * Can pair multiple devices.
 * pt-BR UI
+* Rename your devices with long tap
 
 ## Planned
 
-* Rename paired devices
 * Light theme?
 * Better device control screen (currently only has Light support)
-* Change app name and add an appropriate icon
 * Multiple language support
 
 ## Compatibility list
-* [FLC LED A67 bluetooth smartbulb](https://a-static.mlcdn.com.br/618x463/lamp-led-bulbo-a67-95w-bivolt-e-27-smart-bluetooth-flc/eishop/3669556042/7fb4e9e9029ea5f9235c37f30eea16d3.jpg)
+The software works with the following smart home devices:
+
+O aplicativo funciona com os seguintes dispositivos inteligentes:
+
+* [FLC LED A67 bluetooth lâmpada inteligente smartbulb](https://a-static.mlcdn.com.br/618x463/lamp-led-bulbo-a67-95w-bivolt-e-27-smart-bluetooth-flc/eishop/3669556042/7fb4e9e9029ea5f9235c37f30eea16d3.jpg)
 
 ## Build requirements
 

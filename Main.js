@@ -26,7 +26,6 @@ const Main: () => React$Node = () => {
       await DAO.deleteStorage()
     });
 
-  ToastAndroid.show("v0.0.1", ToastAndroid.SHORT)
   console.log("[MAIN] Execution started")
 
   DAO.prepareStorage().then(async ()=>{

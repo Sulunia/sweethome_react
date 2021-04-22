@@ -16,7 +16,7 @@ module.exports = StyleSheet.create({
     backgroundColor: '#040404',
     flex: 1,
     alignItems: 'center',
-    borderColor:'#131375',
+    borderColor:'#731315',
     borderBottomWidth:2,
     marginHorizontal:48,
     marginTop: -8
@@ -37,8 +37,9 @@ module.exports = StyleSheet.create({
   },
 
   textLight: {
-    color: '#444444',
-    fontSize: 16
+    color: '#655555',
+    fontSize: 16,
+    marginHorizontal:6
   },
 
   textLightBig: {
@@ -65,22 +66,20 @@ module.exports = StyleSheet.create({
     marginBottom: 8,
     fontSize: 20,
     fontWeight: '400',
-    color: "#d6ffeF",
+    color: "#d6d6eF",
   },
   inputField: {
-    height: 32,
-    borderColor: 'white',
-    borderWidth: 1,
-    backgroundColor: '#233328',
+    height: 36,
+    borderColor: '#888888',
+    borderBottomWidth: 1,
+    backgroundColor: '#080808',
     color: 'white',
     fontSize: 20,
     paddingTop: 2,
-    paddingBottom: 2
-  },
-  buttonDefault: {
-    color: "#148351",
-    marginBottom: 12,
-    marginTop: 12
+    paddingBottom: 2,
+    minWidth:200,
+    marginTop:4,
+    marginBottom:12
   },
   highlight: {
     fontWeight: '700',
@@ -124,20 +123,31 @@ module.exports = StyleSheet.create({
   textBtnSm: {
     color: "white",
     textAlign: 'center',
-    fontSize: 16,
-    textShadowColor: '#222222',
-    textShadowRadius: 4,
-    textShadowOffset: { width: 2, height: 2 }
+    fontSize: 16
   },
   textInfo: {
-    fontSize: 24,
-    color: "white",
+    fontSize: 20,
+    color: "#BBBBBB",
     fontWeight: "200",
     textAlign: 'center',
     textAlignVertical: 'center'
   },
-  textBtnDig: {
-    color: 'white',
-    fontSize: 20
+  btnDefault:{
+    backgroundColor:'#001200',
+    paddingHorizontal:10,
+    paddingVertical:6,
+    marginHorizontal:4
+  },
+  btnOk:{
+    backgroundColor:'#001600',
+    paddingHorizontal:10,
+    paddingVertical:6,
+    marginHorizontal:16
+  },
+  btnCancel:{
+    backgroundColor:'#300000',
+    paddingHorizontal:10,
+    paddingVertical:6,
+    marginHorizontal:16
   }
 });

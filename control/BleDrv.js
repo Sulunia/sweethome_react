@@ -174,7 +174,6 @@ const BleDrv = {
     }
     BleDrv.bleInfo.state = "OFF"
     BleDrv.internal.subcriptions = []
-    BleDrv.updateParent()
   },
 
   disconnect: async () => {
@@ -190,7 +189,7 @@ const BleDrv = {
     }
   },
 
-  // Connects to a BLE device and sets up MLDP communication
+  // Connects to a BLE device and sets up communication
   //  device: the device to connect to
   connectToDevice: async (device) => {
     if (BleDrv.internal.currentDevice !== undefined) {

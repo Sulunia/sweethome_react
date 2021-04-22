@@ -7,11 +7,9 @@ const dataDir = FS.documentDirectory + "swcp_data/"
 const DAO = {
   devices: [],
   config: {},
-  furos: new Map([]),
-  current_furo: {},
 
   /**
-   * Prepara o storage no celular para armazenar dados de Perfuracao e Dispositivo
+   * Prepara o storage no celular para armazenar dados de Dispositivo
    */
   deleteStorage: async () => {
     console.log("[DAO] Deleting ENTIRE database")
@@ -19,7 +17,7 @@ const DAO = {
   },
 
   /**
-   * Prepara o storage no celular para armazenar dados de Perfuracao/Dispositivo/Licença
+   * Prepara o storage no celular para armazenar dados de Dispositivo
    */
   prepareStorage: () => {
     return new Promise(async (resolve, reject) => {
@@ -61,7 +59,6 @@ const DAO = {
     console.log("[FILE][LOAD] Get devices")
     let deviceFile = await FS.readAsStringAsync(dataDir + "/" + "devices.json")
     deviceFile = JSON.parse(deviceFile)
-    // console.log("[DAO][DEBUG] Loaded", report, reportFile)
     DAO.devices = deviceFile
     console.log("[DAO][DEBUG] Done", DAO.devices)
   },
@@ -70,7 +67,6 @@ const DAO = {
     console.log("[FILE][LOAD] Get config")
     let configFile = await FS.readAsStringAsync(dataDir + "/" + "appconfig.json")
     configFile = JSON.parse(configFile)
-    // console.log("[DAO][DEBUG] Loaded", report, reportFile)
     DAO.config = configFile
   },
 
